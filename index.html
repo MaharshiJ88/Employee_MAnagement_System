@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <h1>Welcome to Employee Management System Database</h1>
+    </div>
+        <div id="main">
+            <div class="form_section">
+                <form id="form">
+                    <h2>Fill/Update Employee Details</h2>
+                    <input type="text" name="name" placeholder="Enter Employee Name" required/>
+                    <input type="text" name="salary" placeholder="Enter Salary" required/>
+                    <input type="text" name="team" placeholder="Enter Team" required/>
+                       <select name="role" required>
+                        <option value="SDE">SDE</option>
+                        <option value="QA">QA</option>
+                        <option value="GM">GM</option>
+                       </select>
+                    <input type="text" name="companyName" placeholder="Enter Company Name" required/>
+                    <button class="button">Create Employee</button>
+                </form>
+            </div>
+            <div class="table_secetion">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Name</th>
+                            <th>Salary</th>
+                            <th>Role</th>
+                            <th>Team</th>
+                            <th>Company Name</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody id="records_section">
+                        <!-- <tr>
+                            <td>12555</td>
+                            <td>MJ</td>
+                            <td>155</td>
+                            <td>Sde</td>
+                            <td>Btech</td>
+                            <td>Accioo</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
